@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { MoviesListContext } from "../../contexts/MoviesListContext";
+import { CartItemsContext } from "../../contexts/CartItemsContext";
 import { MoviesProps } from "../../types/Movies";
 import formatCurrencyForBRL from "../../utils/formatCurrency";
+import AddToCartButton from "../AddToCartButton";
 import './styles.css';
 
 
 function MovieCard({ ...props }: MoviesProps) {
-    const { movies } = useContext(MoviesListContext)
+    const { addMovieToCart } = useContext(CartItemsContext)
 
     return (
         <div className="card__main-area">
@@ -25,6 +26,10 @@ function MovieCard({ ...props }: MoviesProps) {
                     {formatCurrencyForBRL(props.price)}
                 </p>
 
+                <AddToCartButton
+                    textContent="ADICIONAR AO CARRINHO"
+                    onMovieClicked={() => addMovieToCart(props)}
+                />
             </div>
         </div>
     )

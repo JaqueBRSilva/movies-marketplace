@@ -1,0 +1,14 @@
+.shopbag__container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.shopbag__item-name {
+    display: none;
+}
+
+.shopbag__icon {
+    height: 1.8rem;
+    display: flex;
+}

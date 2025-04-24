@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import ShoppingBagIcon from "../ShoppingBagIcon"
 import './styles.css'
 
 
@@ -11,7 +12,8 @@ function Header() {
                 </h1>
             </Link>
 
-            <Link to="/">
+            <Link to="/cart">
+                <ShoppingBagIcon />
             </Link>
         </header>
     )

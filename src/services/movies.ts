@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const moviesAPI = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: 'https://my-json-server.typicode.com/JaqueBRSilva/movies-marketplace/'
 })
 
 async function getMovies() {

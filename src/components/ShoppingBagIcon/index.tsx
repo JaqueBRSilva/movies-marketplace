@@ -1,6 +1,5 @@
 import BAG_ICON from '../../assets/bag.svg'
 import CountDownProductsInfo from "../CountDownProductsInfo"
-import './responsive.css'
 import './styles.css'
 
 

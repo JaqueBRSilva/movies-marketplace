@@ -12,3 +12,29 @@
     height: 1.8rem;
     display: flex;
 }
+
+
+@media screen and (min-width: 992px) {
+    .shopbag__container {
+        gap: 0.4rem;
+    }
+
+    .shopbag__container-group {
+        display: grid;
+        justify-items: flex-end;
+    }
+
+    .shopbag__item-name {
+        display: flex;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: var(--white);
+    }
+
+    .shopbag__icon-container {
+        margin: 0;
+        margin-left: 1rem;
+        justify-self: end;
+    }
+
+}

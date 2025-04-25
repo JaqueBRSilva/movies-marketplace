@@ -1,16 +1,13 @@
 import { createContext, useState } from 'react'
 import { CartItemsProps, CartProvider_Props, ICartContext } from '../types/CartItems'
-import { MoviesProps } from '../types/Movies'
 
 export const CartItemsContext = createContext<ICartContext>({} as ICartContext)
 
 function CartProvider({ children }: CartProvider_Props) {
-    const [cartItemsList, setCartItemsList] = useState<CartItemsProps[]>([])
+    const [cartItemsList, _] = useState<CartItemsProps[]>([])
     const [totalItemsNumber, setTotalItemsNumber] = useState(0)
 
-    const increaseQuantityItem = () => {
-
-    }
+    const increaseQuantityItem = () => { }
 
     const decreaseQuantityItem = () => {
 
@@ -19,11 +16,10 @@ function CartProvider({ children }: CartProvider_Props) {
         }
     }
 
-    const addMovieToCart = (movieSelected: MoviesProps) => {
+    const addMovieToCart = () => {
     }
 
     const removeItemFromCart = () => {
-
     }
 
     return (
